@@ -1,0 +1,10 @@
+.head{
+    margin:0px;
+    padding:0px;
+    color:aqua;
+    background-color: black;
+}
+.head h1{
+    text-align: center;
+    padding:5px;
+}

@@ -1,0 +1,39 @@
+<div>
+<hr>
+<h3> ngStyle Directive</h3>
+<p [ngStyle]="change">directive works!</p>
+<input (ngStyle)="make()" type="text">
+</div>
+<hr>
+<div>
+<h3> ngClass Directive</h3>
+<p [ngClass]="myclass" > ngClass</p>
+<button  (click)="changeshape()">click here</button>
+</div>
+<hr>
+<div>
+    <h3> ngIf Directive</h3>
+    <select (change)="chose($event)">
+        <option value="math">Math</option>
+        <option value="CSE"> CSE</option>
+        <option value="Hindi">Hindi</option>
+    </select>
+    <p *ngIf="sub"> chosen subject is {{sub}}</p>
+</div>
+<hr>
+<div>
+    <h3> ngFor directive</h3>
+    <div *ngFor="let name of names">Name: {{name}}</div>
+    <div *ngFor="let ob of obj">name: {{ob.name}}
+        state: {{ob.state}}
+        roll: {{ob.roll}}
+    </div>
+    <p *ngFor="let el of arr">{{el}}</p>
+</div>
+<div>
+    <h3> Assignment</h3>
+    <button (click)="buttonclicked()" > Display Details</button>
+    <p *ngIf="showsecret==true " > secret pasword= {{password}}</p>
+    <p *ngFor="let ind of logs" 
+    [ngStyle]="{color: ind>5?'red':'black'}">{{ind}}</p>
+</div>

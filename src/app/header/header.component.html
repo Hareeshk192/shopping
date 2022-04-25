@@ -1,0 +1,18 @@
+<div class="head">
+    <h1> Shopping </h1>
+</div>
+<p> {{d}} </p>
+<!--<img alt="item" [src]="img">-->
+<p id=" h"></p>
+<button [disabled]="f" (click)="fu()"> save</button>
+<br>
+enter name:<input type="text" value="Hareesh" (input)="myname($event)">
+<p> my name is {{name}}</p>
+second name:<input type="text" value="Hareesh" [(ngModel)]="name">
+<p> my second name is {{name}}</p>
+<hr>
+<input type="text" [(ngModel)]="username" (input)="getname($event)">
+<p> username is {{username}} </p>
+<br>
+<button  [disabled]="emptyuname" (click)="makeempty()" >click</button>
+
